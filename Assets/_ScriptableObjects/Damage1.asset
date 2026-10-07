@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f426ea45cc77de549b0753ea2c917c7d, type: 3}
   m_Name: Damage1
   m_EditorClassIdentifier: Assembly-CSharp::Slot
-  m_image: {fileID: 0}
-  m_description: 
-  m_minValue: 0
-  m_maxValue: 0
+  Material: {fileID: 2100000, guid: e99fb8297ba62a54b9c769608c58aed9, type: 2}
+  Description: Damages enemy for 1 dmg.
+  MinValue: 1
+  MaxValue: 1
+  Type: 0

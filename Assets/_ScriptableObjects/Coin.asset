@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f426ea45cc77de549b0753ea2c917c7d, type: 3}
   m_Name: Coin
   m_EditorClassIdentifier: Assembly-CSharp::Slot
-  m_image: {fileID: 0}
-  m_description: 
-  m_minValue: 0
-  m_maxValue: 0
+  Material: {fileID: 2100000, guid: 9d8d7e4a551efec4289f10361eeef142, type: 2}
+  Description: Gain coins in range 3 - 12.
+  MinValue: 3
+  MaxValue: 12
+  Type: 2

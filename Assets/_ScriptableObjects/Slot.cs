@@ -3,8 +3,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Slot", menuName = "Scriptable Objects/Slot")]
 public class Slot : ScriptableObject
 {
-    [SerializeField] private Sprite m_image;
-    [SerializeField, TextArea] private string m_description;
-    [SerializeField] private int m_minValue;
-    [SerializeField] private int m_maxValue;
+    public Material Material;
+    [TextArea] public string Description;
+    public int MinValue;
+    public int MaxValue;
+    public SlotType Type;
+
+    public enum SlotType {Damage, Heal, Coin}
+
 }
