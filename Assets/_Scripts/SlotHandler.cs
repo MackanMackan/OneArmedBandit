@@ -7,10 +7,10 @@ public class SlotHandler : MonoBehaviour
     [SerializeField] private MeshRenderer m_slotRenderer;
     private void Start()
     {
-        UpdateSlotMaterial(m_slot);
+        UpdateSlotType(m_slot);
     }
 
-    public void UpdateSlotMaterial(Slot newSlot)
+    public void UpdateSlotType(Slot newSlot)
     {
         if (newSlot == null) {
             Debug.LogError("Slot was null.");
@@ -21,7 +21,7 @@ public class SlotHandler : MonoBehaviour
         m_slot = newSlot;
     }
 
-    public void TriggerSlotEffekt()
+    public void TriggerSlotEffect()
     {
         switch (m_slot.Type)
         {

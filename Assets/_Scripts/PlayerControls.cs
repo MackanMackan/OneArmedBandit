@@ -42,17 +42,19 @@ public class PlayerControls : MonoBehaviour
             m_currentHealth = m_maxHealth;
         }
 
-        Debug.Log($"Damaged: {healValue}");
+        Debug.Log($"Healed: {healValue}, Current Health: {m_currentHealth}");
     }
 
     public void TransactionCoins(int transaction)
     {
-        if(m_currentCoins + transaction <= 0)
+        if(m_currentCoins + transaction < 0)
         {
             Debug.Log("Cant afford that item");
             return;
         }
 
         m_currentCoins += transaction;
+
+        Debug.Log($"Got {transaction} coins. Current Coints: {m_currentCoins}");
     }
 }

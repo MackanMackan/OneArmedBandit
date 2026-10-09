@@ -30,6 +30,6 @@ public class EnemyControls : MonoBehaviour
         }
 
 
-        Debug.Log($"Damaged Enemy: {damage}");
+        Debug.Log($"Damaged Enemy: {damage}. Remaining Health: {m_currentHealth}");
     }
 }
